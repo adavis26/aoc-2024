@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "chalk": "4"
+  },
+  "scripts": {
+    "generate-day": "./generate-day.sh"
   }
 }

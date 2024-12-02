@@ -1,4 +1,4 @@
-import { prettyPrint, readFile } from "./utils";
+import { prettyPrint, readFile } from "../utils";
 
 function getLists(data: string): [number[], number[]] {
     const colA: number[] = []
@@ -16,7 +16,7 @@ function getLists(data: string): [number[], number[]] {
 }
 
 function main() {
-    const data = readFile('day1.txt');
+    const data = readFile('input.txt');
     const [colA, colB] = getLists(data)
     const ans1 = pt1(colA, colB)
     const ans2 = pt2(colA, colB)
